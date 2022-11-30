@@ -31,7 +31,7 @@ class qcm_generator:
                     index+=1
                     index_quest[index]=quest
                 random_quest_nbr=randint(1,len(index_quest))
-                pg=qcm.add_paragraph(style='List Number').add_run(f'{index_quest[random_quest_nbr]}:')
+                pg=qcm.add_paragraph(style='List Number').add_run(f'{index_quest[random_quest_nbr]}')
                 pg.font.size=Pt(12)
                 pg.font.name='Calibri Light'
                 
