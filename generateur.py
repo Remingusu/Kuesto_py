@@ -34,7 +34,6 @@ class qcm_generator:
                 pg=qcm.add_paragraph(style='List Number').add_run(f'{index_quest[random_quest_nbr]}')
                 pg.font.size=Pt(12)
                 pg.font.name='Calibri Light'
-                
                 index_answ={}
                 index=0
                 for answ in quest_answ[index_quest[random_quest_nbr]]:
