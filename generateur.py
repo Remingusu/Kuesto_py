@@ -48,6 +48,9 @@ class qcm_generator:
                     random_answ_nbr=randint(1,len(index_answ))
                     pg=qcm.add_paragraph()
                     pg.paragraph_format.left_indent=Inches(0.24)
+
+
+
                     pg_run=pg.add_run(f"□ {chr(65+i_3)}. {index_answ[random_answ_nbr]}")
                     pg_run.font.size=Pt(12)
                     pg_run.font.name='Calibri Light'
