@@ -4,16 +4,15 @@ from random import randint
 from docx.shared import Pt,Inches
 class qcm_generator:
     def read_csv(csv_name):
-        csv_open=open(f'{csv_name}.csv','r')
-        csv_read=read(csv_open,delimiter=';')
-        quest_answ={}
-        for row in csv_read:
-            if row[0]!='':
-                quest=row[1]
-                quest_answ[quest]=[row[2]]
-            else:
-                quest_answ[quest].append(row[2])
-        csv_open.close()
+        with open(f'{csv_name}.csv','r') as csv_open:
+            csv_read=read(csv_open,delimiter=';')
+            quest_answ={}
+            for row in csv_read:
+                if row[0]!='':
+                    quest=row[1]
+                    quest_answ[quest]=[row[2]]
+                else:
+                    quest_answ[quest].append(row[2])
         return quest_answ
     def generate(self,nbr_qcm:int,csv_name:str):
         for i_1 in range(nbr_qcm):
