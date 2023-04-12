@@ -2,7 +2,7 @@ from openpyxl import load_workbook
 
 
 class Extractor:
-    def __init__(self, xlsx_file_name):
+    def __init__(self, xlsx_file_name: str):
         self.work_dict = {}
         xlsx_load = load_workbook(xlsx_file_name + '.xlsx')
         sheets_name_list = list(xlsx_load.sheetnames)
