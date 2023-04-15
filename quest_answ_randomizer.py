@@ -1,4 +1,4 @@
-from random import randint, shuffle
+from random import shuffle
 from xlsx_extractor import Extractor
 
 
@@ -6,7 +6,6 @@ class Randomizer:
     def __init__(self, xlsx_file_name: str, list_nbr_questions: list):
         work_dict = Extractor(xlsx_file_name).work_dict
         self.dico_quest_ans = {}
-        print(work_dict)
         for sheet in work_dict:
             list_questions = list(work_dict[sheet])
             shuffle(list_questions)
