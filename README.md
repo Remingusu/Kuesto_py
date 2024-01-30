@@ -1,5 +1,5 @@
 ### *Take Care*
-This project has been dropped
+This project has been dropped. See [Kuesto](https://github.com/Remingusu/Kuesto) *C++ Version*
 
 # Kuesto_py
 This project, is for create *random MCQs* files (.docx) from an *Excel* file (.xlsx).
